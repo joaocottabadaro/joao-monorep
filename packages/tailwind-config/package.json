@@ -1,0 +1,15 @@
+{
+  "name": "@joao-ui/tailwind-config",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "exports": {
+    ".": "./tailwind.config.ts"
+  },
+  "devDependencies": {
+    "@joao-ui/eslint-config": "*",
+    "@joao-ui/tokens": "*",
+    "postcss": "^8.4.38",
+    "tailwind": "^4.0.0"
+  }
+}

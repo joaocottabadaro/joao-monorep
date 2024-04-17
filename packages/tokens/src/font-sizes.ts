@@ -1,0 +1,15 @@
+export const fontSizes = {
+  xxs: 'clamp(0.651rem, 0.6123rem + 0.1938vi, 0.8rem)',
+  xs: 'clamp(0.7813rem, 0.7243rem + 0.2846vi, 1rem);',
+  sm: 'clamp(0.9375rem, 0.8562rem + 0.4065vi, 1.25rem)',
+  md: 'clamp(1.125rem, 1.0112rem + 0.5691vi, 1.5625rem)',
+  lg: 'clamp(1.62rem, 1.4063rem + 1.0685vi, 2.4414rem)',
+  xl: 'clamp(1.944rem, 1.6558rem + 1.441vi, 3.0518rem)',
+  '2xl': 'clamp(2.3328rem, 1.9473rem + 1.9277vi, 3.8147rem)  ',
+  '4xl': 'clamp(2.7994rem, 2.2871rem + 2.5613vi, 4.7684rem);',
+  '5xl': ' clamp(3.3592rem, 2.6825rem + 3.3837vi, 5.9605rem)  ',
+  '6xl': 'clamp(4.0311rem, 3.1415rem + 4.4481vi, 7.4506rem);',
+  '7xl': 'clamp(4.8373rem, 3.6728rem + 5.8224vi, 9.3132rem);',
+  '8xl': 'clamp(4.8373rem, 3.6728rem + 5.8224vi, 9.3132rem);',
+  '9xl': 'clamp(5.8048rem, 4.2862rem + 7.5926vi, 11.6415rem);',
+}

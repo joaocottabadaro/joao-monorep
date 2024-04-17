@@ -1,0 +1,25 @@
+{
+  "name": "@joao-ui/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts --fix"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@joao-ui/ts-config":"*",
+    "@joao-ui/eslint-config": "*",
+    "tsc": "^2.0.4",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  }
+}

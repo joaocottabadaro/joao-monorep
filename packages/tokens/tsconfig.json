@@ -1,0 +1,5 @@
+{
+  "extends":"@joao-ui/ts-config/base.json",
+  "include": ["src"]
+
+}
