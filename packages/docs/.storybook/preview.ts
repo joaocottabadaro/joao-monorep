@@ -1,8 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "../src/index.css"
-import '@joao-ui/react/dist/index.css'
-
-// Replace your-framework with the framework you are using (e.g., react, vue3)
+import "@joao-ui/react/theme"
 
 import { background, themes } from '@storybook/theming';
 
