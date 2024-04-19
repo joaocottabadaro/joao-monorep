@@ -1,6 +1,4 @@
 import type { Preview } from "@storybook/react";
-import "../src/index.css"
-
 import "@joao-ui/react/theme"
 import { background, themes } from '@storybook/theming';
 
