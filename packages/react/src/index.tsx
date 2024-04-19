@@ -1,2 +1,3 @@
-import "global.css";
+import './globals.css'
 export * from './components/Box'
+export * from './components/Button'

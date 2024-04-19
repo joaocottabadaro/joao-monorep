@@ -1,4 +1,3 @@
 {
-    "extends":["@joao-ui/eslint-config"]
-        
-}
+    "extends": "@joao-ui/eslint-config"
+  }

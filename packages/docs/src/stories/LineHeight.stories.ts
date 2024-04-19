@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { lineHeights } from '@joao-ui/tokens'
+import { lineHeight } from '@joao-ui/tokens'
 
 import { TokenTable } from './TokenTable'
 
@@ -17,7 +17,6 @@ type Story = StoryObj<typeof meta>
 
 export const base: Story = {
   args: {
-    tokens: lineHeights,
-    hasRemValue: false,
+    tokens: lineHeight,
   },
 }

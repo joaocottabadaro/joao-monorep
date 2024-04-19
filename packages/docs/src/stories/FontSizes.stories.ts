@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fontSizes } from '@joao-ui/tokens'
+import { fontSizePx } from '@joao-ui/tokens'
 
 import { TokenTable } from './TokenTable'
 
@@ -17,7 +17,6 @@ type Story = StoryObj<typeof meta>
 
 export const base: Story = {
   args: {
-    tokens: fontSizes,
-    hasRemValue: false,
+    tokens: fontSizePx,
   },
 }

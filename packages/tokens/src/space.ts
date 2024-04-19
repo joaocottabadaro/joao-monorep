@@ -1,4 +1,4 @@
-export const space = {
+export const spacing = {
   '3xs': 'clamp(0.3125rem, 0.2962rem + 0.0813vi, 0.375rem)',
   '2xs': ' clamp(0.5625rem, 0.4975rem + 0.3252vi, 0.8125rem)',
   xs: 'clamp(0.875rem, 0.7937rem + 0.4065vi, 1.1875rem)',
