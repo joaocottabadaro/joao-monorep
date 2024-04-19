@@ -6,8 +6,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "dev": "storybook dev -p 6006",
+    "build-vite": "vite build",
     "build": "storybook build",
-    "chromatic": "npx chromatic  --build-script-name build --project-token ${{ secrets.CHROMATIC_PROJECT_TOKEN }}"
+    "chromatic": "npx chromatic  --build-script-name build --project-token chpt_38b62630b2ba9d7 "
   },
   "dependencies": {
     "clsx": "^2.1.0",

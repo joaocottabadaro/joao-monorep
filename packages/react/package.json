@@ -4,20 +4,17 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-
-
+  "style":"./dist/index.css",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js" },
-  
-      "./theme": {
-        "import": "./dist/index.css",
-        "require": "./dist/index.css"
-      }
-    
-  
+      "require": "./dist/index.js"
+    },
+    "./theme": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
   },
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
@@ -35,6 +32,7 @@
     "@types/react": "^18.2.76",
     "@types/react-dom": "^18.2.25",
     "globals": "^15.0.0",
+    "postcss-modules": "^6.0.0",
     "react": "^18.2.0",
     "tailwindcss": "^3.4.3",
     "tsup": "^8.0.2",
