@@ -23,6 +23,9 @@ jobs:
         run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: RtIa86tOUcvE7lWnz6VOmbLd
+          TURBO_TEAM: joaocottabadaros-projects
 
       - name: Run Chromatic
         uses: chromaui/action@latest
