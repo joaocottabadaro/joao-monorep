@@ -12,7 +12,7 @@ const config: Omit<Config, 'content'> = {
       theme: {
         extend: {
           colors: {
-            border: 'var(--border)',
+            border: 'var(--border) ',
             input: 'var(--input)',
             ring: 'var(--ring)',
             background: 'var(--background)',
