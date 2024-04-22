@@ -27,7 +27,7 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: RtIa86tOUcvE7lWnz6VOmbLd
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }} 
           TURBO_TEAM: joaocottabadaros-projects
 
       - name: 'upload'
