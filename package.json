@@ -9,6 +9,7 @@
         "type": "turbo type-check"
     },
     "dependencies": {
+        "changesets": "^1.0.2",
         "turbo": "^1.13.2"
     }
 }
