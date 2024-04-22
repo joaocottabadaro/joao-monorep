@@ -16,7 +16,7 @@ export const base: Story = {
   args: {
     children: (
       <>
-        <p>testando</p>
+        <p>Container</p>
       </>
     ),
   },
