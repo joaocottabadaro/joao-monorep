@@ -29,6 +29,19 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          workingDir: packages/docs
+          workingDir: ./packages/docs
           storybookBuildDir: /home/runner/work/joao-monorep/joao-monorep/packages/docs/storybook-static
 
+  
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+ 
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: /home/runner/work/joao-monorep/joao-monorep/packages/docs/storybook-static
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
