@@ -15,10 +15,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@joao-ui/ts-config": "*",
     "@joao-ui/eslint-config": "*",
+    "@joao-ui/ts-config": "*",
     "tsc": "^2.0.4",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.4",
+    "utopia-core": "^1.3.0"
   }
 }

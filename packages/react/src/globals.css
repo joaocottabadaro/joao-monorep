@@ -1,57 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
-@layer base {
-  :root {
-    --background: #FFFFFF;
-    --foreground: #020817;
-    --card: #FFFFFF;
-    --card-foreground: #020817;
-    --popover: #FFFFFF;
-    --popover-foreground: #020817;
-    --primary: #2463EB;
-    --primary-foreground: #F8FAFC;
-    --secondary: #F1F5F9;
-    --secondary-foreground: #0F1729;
-    --muted: #F1F5F9;
-    --muted-foreground: #65758B;
-    --accent: #F1F5F9;
-    --accent-foreground: #0F1729;
-    --destructive: #EF4343;
-    --destructive-foreground: #F8FAFC;
-    --border: #E1E7EF;
-    --input: #E1E7EF;
-    --ring: #2463EB;
-  }
-  
-  .dark {
-    --background: #020817;
-    --foreground: #FFFFFF;
-    --card: #020817;
-    --card-foreground: #FFFFFF;
-    --popover: #020817;
-    --popover-foreground: #FFFFFF;
-    --primary: #3C83F6;
-    --primary-foreground: #0F1729;
-    --secondary: #1F2A3D;
-    --secondary-foreground: #F8FAFC;
-    --muted: #1F2A3D;
-    --muted-foreground: #94A3B8;
-    --accent: #1F2A3D;
-    --accent-foreground: #F8FAFC;
-    --destructive: #811D1D;
-    --destructive-foreground: #F8FAFC;
-    --border: #1F2A3D;
-    --input: #1F2A3D;
-    --ring: #1D4FD7;
-  }
-  
-  }
-  
 
-  @layer base {
+:root {
+  --background: #FFFFFF;
+  --foreground: #020817;
+  --card: #FFFFFF;
+  --card-foreground: #020817;
+  --popover: #FFFFFF;
+  --popover-foreground: #020817;
+  --primary: #2463EB;
+  --primary-foreground: #F8FAFC;
+  --secondary: #F1F5F9;
+  --secondary-foreground: #0F1729;
+  --muted: #F1F5F9;
+  --muted-foreground: #65758B;
+  --accent: #F1F5F9;
+  --accent-foreground: #0F1729;
+  --destructive: #EF4343;
+  --destructive-foreground: #F8FAFC;
+  --border: #E1E7EF;
+  --input: #E1E7EF;
+  --ring: #2463EB;
+}
+
+.dark {
+  --background: #020817;
+  --foreground: #FFFFFF;
+  --card: #020817;
+  --card-foreground: #FFFFFF;
+  --popover: #020817;
+  --popover-foreground: #FFFFFF;
+  --primary: #3C83F6;
+  --primary-foreground: #0F1729;
+  --secondary: #1F2A3D;
+  --secondary-foreground: #F8FAFC;
+  --muted: #1F2A3D;
+  --muted-foreground: #94A3B8;
+  --accent: #1F2A3D;
+  --accent-foreground: #F8FAFC;
+  --destructive: #811D1D;
+  --destructive-foreground: #F8FAFC;
+  --border: #1F2A3D;
+  --input: #1F2A3D;
+  --ring: #1D4FD7;
+}
+
+
+
+
 
     *,
 *::before,
@@ -98,4 +94,12 @@ picture {
   display: block;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+      color-scheme: dark;
   }
+
+
+}
+
+

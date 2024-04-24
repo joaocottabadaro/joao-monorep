@@ -1,11 +1,23 @@
-import { Dark } from './../src/stories/Colors.stories';
-import type { Preview } from "@storybook/react";
+
 import "@joao-ui/react/theme"
 import "../src/globals.css"
-import { background, themes } from '@storybook/theming';
 
-const preview: Preview = {
+import {  withThemeByClassName} from '@storybook/addon-themes';
+import {  ReactRenderer } from '@storybook/react';
 
+
+
+const preview = {
+  parameters: { },
+ decorators: [
+  withThemeByClassName<ReactRenderer>({
+    themes: {
+      light: '',
+      dark: 'dark',
+    },
+    defaultTheme: 'light',
+  }),
+ ]
 };
 
 export default preview;

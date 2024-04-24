@@ -1,22 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fontSizePx } from '@joao-ui/tokens'
-
-import { TokenTable } from './TokenTable'
+import { FontSize } from './FontSize'
 
 const meta = {
   title: 'Tokens/Font Sizes',
-  component: TokenTable,
+  component: FontSize,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof TokenTable>
+} satisfies Meta<typeof FontSize>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const base: Story = {
-  args: {
-    tokens: fontSizePx,
-  },
-}
+export const base: Story = {}

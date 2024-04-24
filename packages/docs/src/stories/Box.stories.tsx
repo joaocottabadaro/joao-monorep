@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Box } from '@joao-ui/react'
 
 const meta = {
-  title: 'Box',
+  title: 'Components/Box',
   component: Box,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout

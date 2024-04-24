@@ -7,6 +7,8 @@ const config: Pick<Config, 'content' | 'presets'> = {
   content: [
     './src/stories/*.{js,jsx,ts,tsx}',
     './src/stories/**/*.{js,jsx,ts,tsx}',
+    './src/globals.css',
+    '../../node_modules/@joao-ui/react/dist/**',
   ],
   presets: [sharedConfig],
 }

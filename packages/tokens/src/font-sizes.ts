@@ -1,31 +1,15 @@
-export const fontSize = {
-  xs: 'clamp(0.6944rem, 0.6733rem + 0.1056vi, 0.8rem)',
-  sm: 'clamp(0.8333rem, 0.8rem + 0.1667vi, 1rem)',
-  base: 'clamp(1rem, 0.95rem + 0.25vi, 1.25rem)',
-  lg: 'clamp(1.2rem, 1.1275rem + 0.3625vi, 1.5625rem)',
-  xl: 'clamp(1.44rem, 1.3374rem + 0.5131vi, 1.9531rem)',
-  '2xl': 'clamp(1.728rem, 1.5853rem + 0.7134vi, 2.4414rem)',
-  '3xl': 'clamp(2.0736rem, 1.878rem + 0.9782vi, 3.0518rem)',
-  '4xl': 'clamp(2.4883rem, 2.223rem + 1.3264vi, 3.8147rem)',
-  '5xl': 'clamp(2.986rem, 2.6295rem + 1.7824vi, 4.7684rem)',
-  '6xl': 'clamp(3.5832rem, 3.1077rem + 2.3773vi, 5.9605rem)',
-  '7xl': 'clamp(4.2998rem, 3.6697rem + 3.1508vi, 7.4506rem)',
-  '8xl': 'clamp(5.1598rem, 4.3291rem + 4.1534vi, 9.3132rem)',
-  '9xl': 'clamp(6.1917rem, 5.1018rem + 5.4498vi, 11.6415rem)',
+import { calculateTypeScale } from 'utopia-core'
+import { configUtopiaFont } from './configUtopia'
+
+export type UtopiaStep = {
+  step: number
+  minFontSize: number
+  maxFontSize: number
+  wcagViolation?: {
+    from: number
+    to: number
+  } | null
+  clamp: string
 }
 
-export const fontSizePx = {
-  xs: '11.11',
-  sm: '13.33',
-  base: '16',
-  lg: '19.20',
-  xl: '23.04',
-  '2xl': '27.65',
-  '3xl': '33.18',
-  '4xl': '39.81',
-  '5xl': '47.78',
-  '6xl': '57.33',
-  '7xl': '68.80',
-  '8xl': '82.56',
-  '9xl': '99.07',
-}
+export const fontSize: UtopiaStep[] = calculateTypeScale(configUtopiaFont)
