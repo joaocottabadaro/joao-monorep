@@ -1,17 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { Button, Input } from '@joao-ui/react'
 import {
-  Button,
-  Input,
-  Label,
-  Sheet,
-  SheetClose,
+  SheetTrigger,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
-} from '@joao-ui/react'
+  SheetDescription,
+  Label,
+  SheetFooter,
+  SheetClose,
+} from '@joao-ui/react/client'
+import { Sheet } from 'lucide-react'
 
 const meta = {
   title: 'Components/Sheet',

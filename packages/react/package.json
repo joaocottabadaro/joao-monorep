@@ -30,7 +30,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "dev": "tsup ",
     "lint": "eslint src/**/*.ts --fix"
   },
   "keywords": [
