@@ -1,19 +1,20 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { fontSize, spacing } from '@joao-ui/tokens/src'
+console.log('🚀 ~ spacing:', spacing)
 
 export const utopiafontSize = fontSize.map((item) => {
   let label = 'SM'
-  if (item.step === 1) {
+  if (item.step === 0) {
     label = 'MD'
-  } else if (item.step === 2) {
+  } else if (item.step === 1) {
     label = 'LG'
-  } else if (item.step === 3) {
+  } else if (item.step === 2) {
     label = 'XL'
-  } else if (item.step > 3) {
+  } else if (item.step > 2) {
     label = `${item.step - 2}XL`
-  } else if (item.step === -1) {
+  } else if (item.step === -2) {
     label = 'XS'
-  } else if (item.step < 0) {
+  } else if (item.step < -2) {
     label = `${Math.abs(item.step)}XS`
   }
 
@@ -22,6 +23,7 @@ export const utopiafontSize = fontSize.map((item) => {
 })
 
 export const utopiafontSizeObject = Object.assign({}, ...utopiafontSize)
+console.log('🚀 ~ utopiafontSizeObject:', utopiafontSizeObject)
 
 export const spacingUtopia = spacing.sizes.map((item) => {
   let label = item.label
@@ -32,3 +34,4 @@ export const spacingUtopia = spacing.sizes.map((item) => {
 })
 
 export const spacingUtopiaObject = Object.assign({}, ...spacingUtopia)
+console.log('🚀 ~ spacingUtopiaObject:', spacingUtopiaObject)

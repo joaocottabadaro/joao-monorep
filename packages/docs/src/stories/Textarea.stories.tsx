@@ -1,22 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { borderRadius } from '@joao-ui/tokens'
-
-import { TokenTable } from '../components/TokenTable'
+import { Textarea } from '@joao-ui/react'
 
 const meta = {
-  title: 'Tokens/Radius',
-  component: TokenTable,
+  title: 'Components/Textarea',
+  component: Textarea,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
-    layout: 'fullscreen',
+    layout: 'centered',
   },
-} satisfies Meta<typeof TokenTable>
+} satisfies Meta<typeof Textarea>
 
 export default meta
 type Story = StoryObj<typeof meta>
-
 export const base: Story = {
   args: {
-    tokens: borderRadius,
+    className: 'w-[300px]',
+    placeholder: ' Type your message here.',
   },
 }

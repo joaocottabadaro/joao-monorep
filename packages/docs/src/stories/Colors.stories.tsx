@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Colors } from './Colors'
+import { Colors } from '../components/Colors'
 import { colors, colorsDarkMode } from '@joao-ui/tokens'
 
 const meta = {
@@ -10,6 +10,7 @@ const meta = {
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
+    className: 'flex',
   },
 } satisfies Meta<typeof Colors>
 

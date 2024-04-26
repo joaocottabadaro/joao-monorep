@@ -9,13 +9,13 @@ export function Colors({ colors }: ColorsProps) {
     return (
       <div key={key}>
         <div
-          className="flex justify-between p-4 "
+          className="flex justify-between p-sm"
           style={{
             background: color,
             color: getContrast(color, '#FFF') < 3.5 ? '#000' : '#FFF',
           }}
         >
-          <strong>${key}</strong>
+          <strong>{key}</strong>
           <span>{color}</span>
         </div>
       </div>

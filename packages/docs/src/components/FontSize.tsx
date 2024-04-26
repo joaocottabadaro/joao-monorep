@@ -34,11 +34,9 @@ export function FontSize() {
       // const rem = clamp.
       // // Converter rem para pixels
       const remPixels = rem * fontSizeRoot
-      console.log('🚀 ~ FontSize ~ remPixels:', remPixels)
 
       // // Converter vi para pixels (considerando largura da viewport)
       const viPixels = vi * (width / 100)
-      console.log('🚀 ~ FontSize ~ viPixels:', viPixels)
 
       // // Somar os resultados
       let totalPixels = remPixels + viPixels
@@ -49,8 +47,27 @@ export function FontSize() {
     [width, maxWidth, minWidth],
   )
 
+  const fontSizeValue = (step: number) => {
+    let label = 'SM'
+    if (step === 0) {
+      label = 'MD'
+    } else if (step === 1) {
+      label = 'LG'
+    } else if (step === 2) {
+      label = 'XL'
+    } else if (step > 2) {
+      label = `${step - 2}XL`
+    } else if (step === -2) {
+      label = 'XS'
+    } else if (step < -2) {
+      label = `${Math.abs(step)}XS`
+    }
+
+    return label
+  }
+
   return (
-    <div className="my-6 w-full overflow-y-auto bg-red ">
+    <div className="my-6 w-full overflow-y-auto ">
       Current screen size {window.innerWidth}
       <table className="w-full border-collapse">
         <thead>
@@ -77,7 +94,7 @@ export function FontSize() {
                   className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right "
                   style={{ fontSize: item.clamp }}
                 >
-                  Step {item.step}
+                  {fontSizeValue(item.step)}
                 </td>
                 <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right ">
                   {calculateCurrentPX(item.clamp, 16)}

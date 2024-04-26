@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { FontSize } from './FontSize'
+import { FontSize } from '../components/FontSize'
 
 const meta = {
   title: 'Tokens/Font Sizes',

@@ -4,7 +4,7 @@ interface TokenTableProps {
 
 export function TokenTable({ tokens }: TokenTableProps) {
   return (
-    <div className="my-6 w-full overflow-y-auto bg-red ">
+    <div className="my-6 w-full overflow-y-auto  ">
       <table className="w-full border-collapse">
         <thead>
           <tr className="m-0 border-t  even:bg-muted">

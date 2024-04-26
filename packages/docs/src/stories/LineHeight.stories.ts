@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { lineHeight } from '@joao-ui/tokens'
 
-import { TokenTable } from './TokenTable'
+import { TokenTable } from '../components/TokenTable'
 
 const meta = {
   title: 'Tokens/LineHeights',

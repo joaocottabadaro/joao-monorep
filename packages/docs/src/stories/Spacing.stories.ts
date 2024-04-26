@@ -1,23 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box } from '@joao-ui/react'
+import { Spacing } from '../components/Spacing'
 
 const meta = {
-  title: 'Components/Box',
-  component: Box,
+  title: 'Tokens/Spacing',
+  component: Spacing,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof Box>
+} satisfies Meta<typeof Spacing>
 
 export default meta
 type Story = StoryObj<typeof meta>
-export const base: Story = {
-  args: {
-    children: (
-      <>
-        <p>Container</p>
-      </>
-    ),
-  },
-}
+
+export const base: Story = {}
