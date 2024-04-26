@@ -11,7 +11,7 @@
         "link": "turbo link",
         "changeset":  "changeset",
         "version-packages": "changeset version",
-        "release": "turbo run build --filter=docs^.. && changeset version changeset publish"
+        "release": "turbo run build --filter=docs^.. && changeset version && changeset publish"
     },
     "dependencies": {
         "@changesets/cli": "^2.27.1",
