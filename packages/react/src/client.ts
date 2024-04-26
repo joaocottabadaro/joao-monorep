@@ -1,0 +1,6 @@
+export * from './components/Label'
+export * from './components/Slider'
+export * from './components/Sheet'
+export * from './components/Dialog'
+export * from './components/Accordion'
+export * from './components/Avatar'

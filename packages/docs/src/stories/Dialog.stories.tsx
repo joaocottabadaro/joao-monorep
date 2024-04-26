@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import {
-  Button,
   Dialog,
   DialogClose,
   DialogContent,
@@ -9,10 +8,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  Input,
   Label,
-} from '@joao-ui/react'
+} from '@joao-ui/react/client'
 import { Copy } from 'lucide-react'
+import { Button, Input } from '@joao-ui/react'
 
 const meta = {
   title: 'Components/Dialog',

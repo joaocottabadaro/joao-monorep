@@ -1,13 +1,8 @@
 import { configUtopiaSpacing, spacing } from '@joao-ui/tokens'
 import { useEffect, useMemo, useState } from 'react'
 import { useWindowSize } from '../hooks/useWindowResize'
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  Slider,
-} from '@joao-ui/react'
+import { Card, CardContent, CardHeader, CardTitle } from '@joao-ui/react'
+import { Slider } from '@joao-ui/react/client'
 
 export function Spacing() {
   const [width] = useWindowSize()
