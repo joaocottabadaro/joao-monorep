@@ -11,7 +11,6 @@ export function FontSize() {
 
     // Divide a string em partes usando ','
     const parts = cleanedString.split(',')
-    console.log('🚀 ~ extractValuesFromClamp ~ parts:', parts)
 
     // Remove os espaços em branco em cada parte
 
