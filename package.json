@@ -1,17 +1,14 @@
 {
-    "private": "true",
+    "private": true,
     "workspaces": [
         "packages/*"
     ],
     "scripts": {
         "dev": "turbo run dev --parallel",
         "build": "turbo run build",
-        "type": "turbo type-check",
-        "login": "turbo login",
-        "link": "turbo link",
-        "changeset":  "changeset",
+        "changeset": "changeset",
         "version-packages": "changeset version",
-        "release": "turbo run build --filter=docs^.. &&  changeset version && changeset publish"
+        "release": "turbo run build --filter=packages/docs && changeset publish"
     },
     "dependencies": {
         "@changesets/cli": "^2.27.1",

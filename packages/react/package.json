@@ -1,6 +1,6 @@
 {
   "name": "@joao-ui/react",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "types": "./dist/index.d.ts",
   "style": "./dist/index.css",
   "files": [
-    "/dist**"
+    "dist"
   ],
   "exports": {
     ".": {
@@ -32,6 +32,9 @@
     "build": "tsup",
     "dev": "tsup ",
     "lint": "eslint src/**/*.ts --fix"
+  },
+  "publishConfig": {
+    "directory": "dist"
   },
   "keywords": [
     "react",

@@ -1,19 +1,17 @@
 {
     "$schema": "https://turbo.build/schema.json",
-   "pipeline": {
-    "dev":{
+    "pipeline": {
+      "dev": {
         "cache": false
-    },
-    "build":{
+      },
+      "build": {
         "outputs": [
-            "dist/**",
-            "storybook-static/**"
+          "dist/**",
+          "storybook-static/**"
         ],
         "dependsOn": [
-            "^build"
+          "^build"
         ]
-        
+      }
     }
-   }
-
-}
+  }
