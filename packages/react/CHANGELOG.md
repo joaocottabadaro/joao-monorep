@@ -1,5 +1,11 @@
 # @joao-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- Ajustes files path
+
 ## 3.0.0
 
 ### Major Changes
