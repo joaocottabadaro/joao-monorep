@@ -1,5 +1,12 @@
 # @joao-ui/react
 
+## 3.0.0
+
+### Major Changes
+
+- ajuste package.json e description
+- fc72a99: ajuste config client side components
+
 ## 2.1.0
 
 ### Minor Changes
