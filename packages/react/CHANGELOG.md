@@ -1,5 +1,11 @@
 # @joao-ui/react
 
+## 5.0.0
+
+### Major Changes
+
+- ajuste package.json keywordsds
+
 ## 4.1.0
 
 ### Minor Changes

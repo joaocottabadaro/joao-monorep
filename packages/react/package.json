@@ -1,6 +1,6 @@
 {
   "name": "@joao-ui/react",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "main": "./dist/index.js",
   "repository": {
     "type": "git",
@@ -38,7 +38,8 @@
     "next",
     "server-action",
     "tailwind",
-    "shadcnui"
+    "shadcnui",
+    "ui"
   ],
   "author": "João Cotta Badaró",
   "license": "ISC",
